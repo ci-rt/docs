@@ -1,0 +1,88 @@
+CI-RT documentation
+===================
+
+
+NOTE: Not all mentioned repositories are uploaded yet!
+
+
+The CI-RT tests changes of the PREEMPT_RT patch on different hardware
+platforms with a defined test procedure. For a detailed description
+please consider https://ci-rt.linutronix.de/RT-Test/about.jsp .
+
+The CI-RT is split in several subprojects. They are shortly described
+in the following:
+
+https://github.com/ci-rt/jenkins[jenkins]::
+
+	The control instance uses jenkins to deploy the jobs on the
+	different defined slaves. This git repository hosts the
+	jenkins configuration files. +
+	For setup, please consider
+	https://github.com/ci-rt/jenkins/blob/master/README.adoc[README].
+
+
+
+https://github.com/ci-rt/ci-web[ci-web]::
+
+	The test results are displayed on a
+	https://ci-rt.linutronix.de[web interface]. This git
+	repository hosts the corresponding source code as well as the
+	needed data base scheme. You need the
+	https://github.com/ci-rt/google-visualization-java[google-visualization-java]
+	repository to build the web interface. +
+	For setup, please consider
+	https://github.com/ci-rt/ci-web/blob/master/README.adoc[README].
+
+
+
+https://github.com/ci-rt/google-visualization-java[google-visualization-java]::
+
+	This repo is a fork of
+	https://github.com/google/google-visualization-java with
+	additional changes, to make it possible to use postgresql data
+	bases. +
+	For setup, please consider
+	https://github.com/ci-rt/ci-web/blob/master/README.adoc[ci-web
+	README] and
+	https://github.com/ci-rt/google-visualization-java/blob/master/README.adoc[google-visualization-java README].
+
+
+https://github.com/ci-rt/test-description[test-description]::
+
+	The test, that should be executed are described via a test
+	description repository. For an explanation of the structure of
+	the test-descriptions, please consider
+	https://github.com/ci-rt/test-description/blob/master/README.adoc[README].
+
+
+
+https://github.com/ci-rt/libvirt[libvirt]::
+
+	This repo is a fork of http://libvirt.org/git/ with additional
+	changes. Those changes make it possible to communicate with
+	hypervisor r4d via libvirt.
+
+
+https://github.com/ci-rt/libvirt-slave-plugin[libvirt-slave-plugin]::
+
+	This repo is a fork of
+	https://github.com/jenkinsci/libvirt-slave-plugin with
+	additional changes, that enable the selection of r4d as
+	hypervisor to communicate with via libvirt.
+
+
+https://github.com/ci-rt/r4d[r4d]::
+
+	For the communication abstraction for the targets located in
+	the racks, hypervisor r4d is used. +
+	For setup, please consider
+	https://github.com/ci-rt/r4d/blob/master/README.adoc[README].
+
+https://github.com/ci-rt/libr4d[libr4d]::
+
+	For the communication abstraction for the targets located in
+	the racks, hypervisor r4d is used. The C library libr4d
+	provides helper functions to access and comunicate with the
+	hypervisor r4d. +
+	For setup, please consider
+	https://github.com/ci-rt/libr4d/blob/master/INSTALL[INSTALL].

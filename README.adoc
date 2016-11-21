@@ -60,7 +60,19 @@ https://github.com/ci-rt/libvirt[libvirt]::
 
 	This repo is a fork of http://libvirt.org/git/ with additional
 	changes. Those changes make it possible to communicate with
-	hypervisor r4d via libvirt.
+	hypervisor r4d via libvirt. +
+	For setup, please configure
+	https://github.com/ci-rt/docs/blob/master/libvirt.adoc[libvirt
+	documentation].
+
+https://github.com/ci-rt/libvirt-debian[libvirt-debian]::
+
+	This repo hosts the debianization of libvirt with additional
+	changes, which make it possible to communicate with hypervisor
+	r4d via libvirt. +
+	For setup, please consider
+	https://github.com/ci-rt/docs/blob/master/libvirt.adoc[libvirt
+	documentation].
 
 
 https://github.com/ci-rt/libvirt-slave-plugin[libvirt-slave-plugin]::

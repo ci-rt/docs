@@ -1,10 +1,6 @@
 CI-RT documentation
 ===================
 
-
-NOTE: Not all mentioned repositories are uploaded yet!
-
-
 The CI-RT tests changes of the PREEMPT_RT patch on different hardware
 platforms with a defined test procedure. For a detailed description
 please consider https://ci-rt.linutronix.de/RT-Test/about.jsp .
@@ -88,7 +84,7 @@ https://github.com/ci-rt/r4d[r4d]::
 	For the communication abstraction for the targets located in
 	the racks, hypervisor r4d is used. +
 	For setup, please consider
-	https://github.com/ci-rt/r4d/blob/master/README.adoc[README].
+	https://github.com/ci-rt/r4d/blob/master/README[README].
 
 https://github.com/ci-rt/libr4d[libr4d]::
 

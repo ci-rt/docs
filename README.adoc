@@ -58,8 +58,7 @@ https://github.com/ci-rt/libvirt-debian[libvirt-debian]::
 	hosts only the adapted debian/sid branch renamed as
 	debian/jessie-backports. +
 	For setup, please consider
-	https://github.com/ci-rt/libvirt-debian/blob/debian/jessie-backports/README.adoc[libvirt
-	documentation].
+	https://github.com/ci-rt/libvirt-debian/blob/debian/jessie-backports/README.adoc[README].
 
 
 https://github.com/ci-rt/libvirt-slave-plugin[libvirt-slave-plugin]::
@@ -75,7 +74,7 @@ https://github.com/ci-rt/r4d[r4d]::
 	For the communication abstraction for the targets located in
 	the racks, hypervisor r4d is used. +
 	For setup, please consider
-	https://github.com/ci-rt/r4d/blob/master/README[README].
+	https://github.com/ci-rt/r4d/blob/master/README.adoc[README].
 
 https://github.com/ci-rt/libr4d[libr4d]::
 
@@ -84,4 +83,4 @@ https://github.com/ci-rt/libr4d[libr4d]::
 	provides helper functions to access and comunicate with the
 	hypervisor r4d. +
 	For setup, please consider
-	https://github.com/ci-rt/libr4d/blob/master/INSTALL[INSTALL].
+	https://github.com/ci-rt/libr4d/blob/master/README.adoc[README].

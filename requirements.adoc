@@ -1,0 +1,81 @@
+CI-RT requirements and rules
+============================
+
+The testsystem as well as the targets that will be tested need to meet
+several requirements. Rules define the implementation of the
+testsystem and the testdescriptions.
+
+
+Target
+------
+
+For a detailed list about system requirements please refere to the
+https://ci-rt.linutronix.de/download/system-requirements.pdf[pdf] in
+the download area of ci-rt.linutronix.de.
+
+Some more implementation specific rules/limitations are listed here:
+
+* The target must be supported by the mainline kernel. If patches are
+  required, only board specific patches are accepted (e.g. device
+  tree, specific drivers). The patches are applied via quilt series on
+  top of the kernel source.
+
+* A target is not mandatory tested with all available rt kernel
+  versions due to previous criteria.
+  
+
+
+
+Standard "Smoke Test"
+---------------------
+
+The standard "smoke test" is executed during stable maintenance and
+current development.
+
+
+Compile Test
+~~~~~~~~~~~~
+
+Beside the listed mainline kernel configurations, test target specific
+configurations are built. They are all built with four different
+overlays (plain, debug, RT-full, RT-full-debug):
+
+arm:
+* allmodconfig
+
+arm64:
+* defconfig
+
+x86:
+* x86_64_defconfig
+* allmodconfig
+
+
+Boottest
+~~~~~~~~
+
+The targets supported by the tested kernel versions are booted with
+the corresponding kernel with RT-full overlay.
+
+
+Cyclictest
+~~~~~~~~~~
+
+On all booted targets (with RT-full overlay), two cyclictest runs are
+executed one after the other:
+
+* 30 minutes cyclictest with no load
+* 30 minutes cyclictest with hackbench load
+
+
+
+Decisions/Rules for implementation details
+------------------------------------------
+
+* Bootlog is stored only with kernel output messages (user space
+  messages are ignored) in database.
+
+* Custom configurations are stored in test description (not included
+  via quilt patch queue):
+  compile/configs/$ARCH/$CONFIG
+

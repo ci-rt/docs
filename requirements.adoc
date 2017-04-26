@@ -41,13 +41,17 @@ configurations are built. They are all built with four different
 overlays (plain, debug, RT-full, RT-full-debug):
 
 arm:
+
 * allmodconfig
 
 arm64:
+
 * defconfig
 
 x86:
+
 * x86_64_defconfig
+
 * allmodconfig
 
 

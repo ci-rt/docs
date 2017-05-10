@@ -72,6 +72,21 @@ executed one after the other:
 * 30 minutes cyclictest with hackbench load
 
 
+Compiler-Policy
+---------------
+
+CI-RT policy for crosscompiling:
+
+* use Debian crosscompiler if possible (compile machines are Debian
+  Stretch based)
+
+* If they are not properly working (for older kernel versions)
+  kernel.org crosscompiler are used:
+  https://www.kernel.org/pub/tools/crosstool/;
+  https://www.kernel.org/pub/tools/crosstool/files/bin/x86_64/4.9.0/
+  (for arm64); They are installed at /opt/crosstool; full path is
+  given as CROSSCOMPILE environment variable in test description.
+
 
 Decisions/Rules for implementation details
 ------------------------------------------

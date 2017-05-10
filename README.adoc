@@ -68,6 +68,12 @@ https://github.com/ci-rt/libvirt-slave-plugin[libvirt-slave-plugin]::
 	additional changes, that enable the selection of r4d as
 	hypervisor to communicate with via libvirt.
 
+https://github.com/ci-rt/warnings-plugin[warnings-plugin]::
+
+	This repo is a fork of
+	https://github.com/jenkinsci/warnings-plugin with additional
+	changes (in several branches) like token handling, RTTest
+	output parsing and Linux Bootlog parser.
 
 https://github.com/ci-rt/r4d[r4d]::
 

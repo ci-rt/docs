@@ -23,8 +23,19 @@ Some more implementation specific rules/limitations are listed here:
 * A target is not mandatory tested with all available rt kernel
   versions due to previous criteria.
   
+Targets list
+~~~~~~~~~~~~
 
+The following targets are included into our testing infrastructure:
 
+arm:
+
+* phyflex-imx6
+* roborio
+
+x86:
+
+* iommu
 
 Standard "Smoke Test"
 ---------------------
@@ -37,8 +48,9 @@ Compile Test
 ~~~~~~~~~~~~
 
 Beside the listed mainline kernel configurations, test target specific
-configurations are built. They are all built with four different
-overlays (plain, debug, RT-full, RT-full-debug):
+configurations are built (see list of targets above). They are all
+built with four different overlays (plain, debug, RT-full,
+RT-full-debug):
 
 arm:
 
@@ -49,6 +61,8 @@ arm64:
 * defconfig
 
 x86:
+
+* i386_defconfig
 
 * x86_64_defconfig
 

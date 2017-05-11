@@ -1,5 +1,7 @@
 CI-RT requirements and rules
 ============================
+:toc:
+:toclevels: 3
 
 The testsystem as well as the targets that will be tested need to meet
 several requirements. Rules define the implementation of the

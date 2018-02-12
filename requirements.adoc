@@ -30,14 +30,8 @@ Targets list
 
 The following targets are included into our testing infrastructure:
 
-arm:
+https://ci-rt.linutronix.de/RT-Test/targets.jsp[Target overview]
 
-* phyflex-imx6
-* roborio
-
-x86:
-
-* iommu
 
 Standard "Smoke Test"
 ---------------------
@@ -113,4 +107,3 @@ Decisions/Rules for implementation details
 * Custom configurations are stored in test description (not included
   via quilt patch queue):
   compile/configs/$ARCH/$CONFIG
-

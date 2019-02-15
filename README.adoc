@@ -140,3 +140,25 @@ https://github.com/ci-rt/elbe-rfs[elbe-rfs]::
 	This repo contains all required files to be able to build the RFS for a
 	specific DUT. For more information about the tool which is used for
 	building, please consider https://elbe-rfs.org/[E.L.B.E. website].
+
+
+
+TESTBOX specific projects
+-------------------------
+
+The TESTBOX is a Banana Pi R1 router board expanded by a custom developed
+shield. This results in a standardized adaption system to be able to handle not
+standardized hardware in CI-RT and to run hardware assisted tests.
+
+https://github.com/ci-rt/testbox-shield[testbox-shield]::
+
+	This repo hosts all TESTBOX shield related drawings, layouts and
+	schematics. It is a kicad version 5 based project. Please read the
+	README before use.
+
+https://github.com/ci-rt/testbox-rfs[testbox-rfs]::
+
+	This repo contains the http://elbe-rfs.org/[E.L.B.E] recipe to build a
+	root file system for the TESTBOX. For more information about the tool
+	E.L.B.E. which is used for building, please consider
+	https://elbe-rfs.org/[E.L.B.E. website].

@@ -125,3 +125,18 @@ https://github.com/ci-rt/google-visualization-java[google-visualization-java]::
 	https://github.com/ci-rt/ci-web/blob/master/README.adoc[ci-web
 	README] and
 	https://github.com/ci-rt/google-visualization-java/blob/master/README.adoc[google-visualization-java README].
+
+
+
+DUT specific projects
+---------------------
+
+The DUTs or Jenkins slaves require several specific packages and also some extra
+settings to be able to test booting the DUT via Jenkins. To be able to
+reproducable rebuild the RFS, https://elbe-rfs.org/[E.L.B.E.] is used.
+
+https://github.com/ci-rt/elbe-rfs[elbe-rfs]::
+
+	This repo contains all required files to be able to build the RFS for a
+	specific DUT. For more information about the tool which is used for
+	building, please consider https://elbe-rfs.org/[E.L.B.E. website].

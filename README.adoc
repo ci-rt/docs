@@ -162,3 +162,30 @@ https://github.com/ci-rt/testbox-rfs[testbox-rfs]::
 	root file system for the TESTBOX. For more information about the tool
 	E.L.B.E. which is used for building, please consider
 	https://elbe-rfs.org/[E.L.B.E. website].
+
+
+
+Outdated projects
+-----------------
+
+Several repos are no longer required or outdated but still available. To not
+break existing links, those repos are kept. Links to current replacement repos
+are added to the README files inside those outdated repos.
+
+https://github.com/ci-rt/jenkins[jenkins]::
+
+	Old repo which was used as long as Jenkins job configuration was done
+	via xml files. Now pipelines are used instead.
+
+
+https://github.com/ci-rt/jenkins-pipeline[jenkins-pipeline]::
+
+	Old repo which contained the functionality of CI-RT scheduler. The
+	functionality is now integrated in jenkins-cirt-libs.
+
+
+https://github.com/ci-rt/warnings-plugin[warnings-plugin]::
+
+	Fork of the original warnings-plugin. Repo was required during the
+	development of the kernel output parsing functionality.
+

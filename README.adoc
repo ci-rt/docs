@@ -39,11 +39,9 @@ https://github.com/ci-rt/jenkins-cirt-libs[jenkins-cirt-libs]::
 	https://github.com/ci-rt/jenkins-cirt-libs/blob/master/README.adoc[README].
 
 
-https://github.com/ci-rt/libvirt-slave-plugin[libvirt-slave-plugin]::
+https://github.com/jenkinsci/libvirt-slave-plugin[libvirt-slave-plugin]::
 
-	This repopository is a fork of
-	https://github.com/jenkinsci/libvirt-slave-plugin with
-	additional changes, that enables the selection of r4d as
+	Jenkins Libvirt Agents plugin >= 1.9.0 enables the selection of r4d as
 	hypervisor to communicate with slaves via libvirt.
 
 
@@ -183,6 +181,10 @@ https://github.com/ci-rt/jenkins-pipeline[jenkins-pipeline]::
 	Old repo which contained the functionality of CI-RT scheduler. The
 	functionality is now integrated in jenkins-cirt-libs.
 
+
+https://github.com/ci-rt/libvirt-slave-plugin[libvirt-slave-plugin]::
+
+	Old repo. All changes are in its upstream which is maintained by CI-RT now.
 
 https://github.com/ci-rt/warnings-plugin[warnings-plugin]::
 
